@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Citas Médicas - Semantic UI</title>
+  <!-- Semantic UI local -->
+  <link rel="stylesheet" href="css/semantic.css">
+  <link rel="stylesheet" href="css/style24.css">
+</head>
+<body>
+
+  <!-- MENU -->
+  <div class="ui inverted menu">
+    <div class="ui container">
+      <a class="header item">MediCitas</a>
+      <a class="item active" href="#">Inicio</a>
+      <a class="item" href="servicios.html">Servicios</a>
+      <a class="item" href="#contacto">Contacto</a>
+    </div>
+  </div>
+
+  <div class="ui vertical masthead center aligned segment" style="background:#2185d0; color:white; padding:5em 0;">
+    <div class="ui text container">
+      <h1 class="ui inverted header">Agenda tu Cita Médica</h1>
+      <h3>Salud rápida, fácil y a tu alcance</h3>
+      <a href="#registro" class="ui huge yellow button">Agendar ahora <i class="right arrow icon"></i></a>
+    </div>
+  </div>
+
+  <div id="servicios" class="ui container" style="padding:4em 0;">
+    <h2 class="ui center aligned header">Nuestros Especialistas</h2>
+    <div class="ui three stackable cards">
+      <div class="card">
+        <div class="image">
+          <img src="imagenes23/juan.jpg" width="150px" height="150px"  alt="Doctor 1">
+        </div>
+        <div class="content">
+          <div class="header">Dr. Juan Pérez</div>
+          <div class="meta">Cardiólogo</div>
+          <div class="description">Especialista en salud cardiovascular.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="imagenes23/maria.jpg" width="150px" height="150px"  alt="Doctor 2">
+        </div>
+        <div class="content">
+          <div class="header">Dra. María López</div>
+          <div class="meta">Pediatra</div>
+          <div class="description">Atención para niños y adolescentes.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="imagenes23/carlos.jpg " width="150px" height="150px" alt="Doctor 3">
+        </div>
+        <div class="content">
+          <div class="header">Dr. Carlos Gómez</div>
+          <div class="meta">Dermatólogo</div>
+          <div class="description">Cuidado de la piel y tratamientos estéticos.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORMULARIO DE CITA -->
+  <div id="registro" class="ui container" style="padding:4em 0;">
+    <h2 class="ui center aligned header">Agendar Cita</h2>
+    <form class="ui form">
+      <div class="field">
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Tu nombre completo">
+      </div>
+      <div class="field">
+        <label>Correo</label>
+        <input type="email" name="correo" placeholder="ejemplo@correo.com">
+      </div>
+      <div class="two fields">
+        <div class="field">
+          <label>Especialidad</label>
+          <select class="ui dropdown">
+            <option value="">Selecciona especialidad</option>
+            <option value="cardio">Cardiología</option>
+            <option value="pediatria">Pediatría</option>
+            <option value="derma">Dermatología</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Fecha</label>
+          <input type="date" name="fecha">
+        </div>
+      </div>
+      <button class="ui primary button" type="submit">Confirmar Cita</button>
+    </form>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="contacto" class="ui inverted vertical footer segment" style="padding:2em 0; margin-top:3em;">
+    <div class="ui container center aligned">
+      <p>&copy; 2025 MediCitas - Todos los derechos reservados</p>
+    </div>
+  </div>
+
+  <!-- Semantic JS (si lo tienes descargado, inclúyelo también) -->
+  <script src="semantic.min.js"></script>
+</body>
+</html>

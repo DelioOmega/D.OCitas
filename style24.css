@@ -1,0 +1,6 @@
+  .ui.cards .card .image img {
+    width: 100%;
+    height: 250px;   /* ajusta la altura que quieras */
+    object-fit: cover; /* recorta para mantener proporción sin deformar */
+  }
+
